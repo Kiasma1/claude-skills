@@ -5,6 +5,8 @@
 ## 技能来源
 
 ### Matt Pocock Skills (英文)
+**来源：** https://github.com/mattpocock/claude-code-skills
+
 - ask-matt - 技能导航和工作流指南
 - codebase-design - 深层模块设计
 - diagnosing-bugs - 系统化 bug 诊断
@@ -14,6 +16,14 @@
 - 等等...
 
 ### Superpowers-ZH (中文)
+**来源：** https://github.com/jnMetaCode/superpowers-zh
+
+安装方式：
+```bash
+npx superpowers-zh --tool claude
+```
+
+包含技能：
 - brainstorming - 头脑风暴
 - chinese-* 系列 - 中文环境相关（代码审查、文档排版、Git 工作流等）
 - test-driven-development - 测试驱动开发
@@ -23,6 +33,8 @@
 - 等等...
 
 ### Andrej Karpathy Skills
+**来源：** https://github.com/forrestchang/andrej-karpathy-skills
+
 - karpathy-guidelines - 减少 LLM 编码错误的行为准则
 
 ## 安装

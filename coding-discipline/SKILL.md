@@ -1,5 +1,5 @@
 ---
-name: karpathy-guide-token-opti
+name: coding-discipline
 description: Karpathy behavioral guidelines plus ultimate token optimization. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, define verifiable success criteria, and produce diff-only, no-yapping output.
 license: MIT
 ---

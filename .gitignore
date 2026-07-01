@@ -16,3 +16,7 @@ desktop.ini
 *.tmp
 *.swp
 *~
+
+# Python
+__pycache__/
+*.pyc

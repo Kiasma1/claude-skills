@@ -1,12 +1,12 @@
 ---
-name: karpathy-guidelines
-description: Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
+name: karpathy-guide-token-opti
+description: Karpathy behavioral guidelines plus ultimate token optimization. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, define verifiable success criteria, and produce diff-only, no-yapping output.
 license: MIT
 ---
 
-# Karpathy Guidelines
+# Karpathy Guidelines & Ultimate Token Optimization
 
-Behavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+Behavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls, plus strict token-optimization rules for terse, diff-only output.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
@@ -65,3 +65,26 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## 5. No Yapping
+
+**Never explain your code unless explicitly asked.**
+
+- No pleasantries ("Here is the updated code", "I have analyzed the issue", "Let me know if you need anything else").
+- Output ONLY the requested commands or code changes.
+- Keep internal `<thinking>` blocks as short as possible.
+
+## 6. Diff & Patch Only
+
+**Never rewrite an entire file unless the user explicitly commands "Rewrite the whole file".**
+
+- When modifying existing files, use the most concise search/replace format or provide unified diffs.
+- Omit unchanged parts of the code using comments like `// ... unchanged code ...` if you must show context.
+- If a file is too large, use terminal commands (like `sed` or `awk`) to modify it rather than outputting the code in the chat interface.
+
+## 7. Robust & Precise
+
+**Read before you write. Fix the exact line.**
+
+- Before modifying a file, read it thoroughly.
+- If you encounter an error, fix the exact line. Do not hallucinate or guess the surrounding logic.

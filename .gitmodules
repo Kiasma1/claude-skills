@@ -1,0 +1,12 @@
+[submodule "cangjie-skill"]
+	path = cangjie-skill
+	url = https://github.com/kangarooking/cangjie-skill.git
+[submodule "darwin-skill"]
+	path = darwin-skill
+	url = https://github.com/alchaincyf/darwin-skill.git
+[submodule "nuwa-skill"]
+	path = nuwa-skill
+	url = https://github.com/alchaincyf/nuwa-skill.git
+[submodule "steve-jobs-skill"]
+	path = steve-jobs-skill
+	url = https://github.com/alchaincyf/steve-jobs-skill.git
